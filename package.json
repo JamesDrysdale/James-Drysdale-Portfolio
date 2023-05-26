@@ -1,6 +1,6 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "Demo App with Routing built-in (recommended)",
+  "name": "james-drysdale-portfolio",
+  "description": "Portfolio Site for Software Developer, UX enthusiast and artist, James Drysdale",
   "engines": {
     "node": ">=15.0.0"
   },

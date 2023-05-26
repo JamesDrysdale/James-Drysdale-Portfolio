@@ -17,7 +17,7 @@ body {
 h1,
 h2,
 h3 {
-  color: white;
+  color: black;
   margin: 0;
 }
 
@@ -86,9 +86,9 @@ ul {
 .container.container-center {
   text-align: center;
 }
-.container.container-flex {
+/* .container.container-flex { */
   /* does nothing on mobile */
-}
+/* } */
 .container.container-spacing-xl {
   padding: 50px 40px;
 }
