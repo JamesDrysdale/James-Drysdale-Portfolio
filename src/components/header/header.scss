@@ -1,12 +1,75 @@
+//   BASIC HEADER STYLES
 
+.headerbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px 0;
+    transition: all 0.3s ease;
 
-// BRAND LOGO
-.logo > img {
-    height: 68px;
-    width: 68px;
+    .headerbar-inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        clear: both;
+    }
+
+    // BRAND LOGO
+    .logo {
+        img{
+            max-width: 50px;
+            max-height: 50px;
+            transform: rotate(160deg);
+        }
+    }
+
+    // NAVIGATION MENU STYLES
+    .navigation-menu {
+        // List styles
+        ul {
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                margin: 0 20px 0 0;
+                display: inline-block;
+
+                &last-child {
+                    margin-right: 0;
+                }
+
+                // Menu button styles
+                button {
+                    color: var(--light);
+                    font-family: poppins, sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                &.current {
+                    button {
+                        color: var(--accent-color);
+                    }
+                }
+            }
+        }   
+    }
 }
 
-img{
-    
-    transform: rotate(160deg);
-  }
+.headerbar.animate {
+    background-color: var(--dark);
+    box-shadow: 0 0 20px rgb(255 255 255/9%);
+}
+
+
+
+
+
