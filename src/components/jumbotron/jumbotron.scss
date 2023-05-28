@@ -33,7 +33,7 @@
             left: 0;
             right: 0;
             background-color: var(--dark);
-            opacity: 0.4;
+            opacity: 0.5;
             z-index: 1;
         }
     }
@@ -52,9 +52,8 @@
             width: 200px;
             height: 200px;
             margin-bottom: 35px;
-        }
 
-        .avatar {
+            .avatar {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -63,23 +62,61 @@
             background-image: url("/images/jamesdrysdale.jpg");
             background-size: cover;
             background-position: center;
-            border-radius: 50%;
-        }
+            border-radius: 100%;
 
-        &:before {
-            position: absolute;
-            max-width: 220px;
-            max-height: 220px;
-            content: "";
-            top: -10px;
-            left: -10px;
-            bottom: -10px;
-            right: -10px;
-            background-color: var(--light);
-            opacity: 0.1;
-            border-radius: 50%;
-            z-index: -1;
-        }
+                &:before {
+                position: absolute;
+                // max-width: 220px;
+                // max-height: 220px;
+                content: "";
+                top: -10px;
+                left: -10px;
+                bottom: -10px;
+                right: -10px;
+                background-color: var(--light);
+                opacity: 0.1;
+                border-radius: 100%;
+                z-index: -1;
+                }
+            }
+        } 
     }
     
+    .client-name {
+        text-transform: uppercase;
+        color: var(--light);
+        margin-bottom: 15px;
+        font-family: montserrat, sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        margin: 0;
+
+        span {
+            color: var(--accent-color);
+        }
+    }
+
+    .profession {
+        color: var(--light);
+        font-family: poppins, sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.arrow-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    z-index: 6;
+
+    button {
+        color: var(--light);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
 }
