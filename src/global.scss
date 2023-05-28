@@ -1,0 +1,203 @@
+/* FONT SETUP */
+:root,
+:host {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/fonts/fa-solid-900.woff2") format("woff2"),
+    url("/fonts/fa-solid-900.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 400;
+  src: url("/fonts/poppins-400.woff2");
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 500;
+  src: url("/fonts/poppins-500.woff2");
+}
+
+@font-face {
+  font-family: poppins;
+  font-weight: 700;
+  src: url("/fonts/poppins-700.woff2");
+}
+
+.fas,
+.fa-solid {
+  font-weight: 900;
+}
+
+/* COLOURS SETUP */
+
+:root {
+  --accent-color: #32CBFF;
+  --foreground-color: #BBBBBB;
+  --light: #FFFFFF;
+  --dark: #000000;
+}
+
+/* BASIC GLOBAL STYLES - 
+// to reset any defaults provided by specific browsers and create cross-platform consistency 
+*/
+
+body {
+  font-family: poppins, "Mulish", sans-serif;
+  background-color: var(--dark);
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: poppins;
+  color: var(--light);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+
+}
+
+ul {
+  padding: 0;
+}
+
+/* CONTAINER STYLES */
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+  clear: both;
+}
+
+/* TITLES */
+
+main-title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.main-title span {
+  display: inline-block;
+  color: var(--accent-color);
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.main-title h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* LINKS */
+
+.animated-link {
+  position: relative;
+  display: inline-block;
+  color: var(--light);
+  font-weight: 500;
+  text-decoration: none;
+
+  &:before {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: var(--dark);
+    opacity: 0.2;
+  }
+
+  &:after {
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 0;
+    bottom: 3px;
+    height: 1px;
+    content: "";
+    background: currentColor;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s; 
+  }
+
+  &:hover{
+    &::after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+.external-link-icon {
+    left: 0;
+    top: 9px;
+    color: var(--light) !important;
+}
+
+// BUTTONS
+
+.default-button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+
+    a {
+      position: relative;
+      display: inline-block;
+      color: var(--light);
+      font-family: poppins;
+      background-color: var(--accent-color);
+      text-decoration: none;
+      padding: 12px 45px;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -25%;
+        height: 100%;
+        width: 0%;
+        content: "";
+        background: var(--light);
+        opacity: 0.2;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        z-index: 1;
+      }
+
+      &:hover:before {
+        width: 150%;
+
+      }
+    }
+}
