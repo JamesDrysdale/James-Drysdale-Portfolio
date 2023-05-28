@@ -1,0 +1,115 @@
+.about {
+    width: 100%;
+    height: auto;
+    clear: both;
+    margin-bottom: 150px;
+    padding-top: 140px;
+
+    .about-content {
+        display: flex;
+        width: 100%;
+        height: auto;
+        clear: both;
+        padding-top: 100px;
+    }
+
+    .left {
+        width: 25%;
+        float: left;
+        height: auto;
+
+        .about-image-wrapper {
+            position: relative;
+            float: left;
+
+            .portrait-frame {
+                position: absolute;
+                top: 25px;
+                bottom: -25px;
+                left: 25px;
+                right: -25px;
+                border: 10px solid var(--light);
+                opacity: 0.2;
+            }
+
+            img {
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .right {
+        width: 75%;
+        height: auto;
+        padding-left: 70px;
+
+        .about-title {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+
+                .highlight {
+                    color: var(--accent-color);
+                }
+            }
+        }
+
+        .about-details {
+            margin-bottom: 24px;
+            float: left;
+            color: var(--foreground-color);
+
+            span {
+                color: var(--accent-color);
+                font-style: italic;
+            }
+        }
+
+        .about-details-list-wrapper {
+            width: 100%;
+            height: auto;
+            clear: both;
+            float: left;
+            margin-bottom: 24px;
+
+            ul {
+                margin: 0;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    float: left;
+                    width: 50%;
+                    margin: 0 0 10px;
+
+                    &:nth-of-type(2n) {
+                        clear: right;
+                    }
+
+                    span {
+                        color: var(--foreground-color);
+                    }
+
+                    label {
+                        display: inline-block;
+                        min-width: 85px;
+                        color: var(--light);
+                        font-weight: 600;
+                        padding-left: 10px;
+                    }
+
+                    i {
+                        left: 0;
+                        top: 9px;
+                        width: 17px;
+                        height: 17px;
+                        color: var(--accent-color);
+                    }
+                }
+            }
+        }
+    }
+}
