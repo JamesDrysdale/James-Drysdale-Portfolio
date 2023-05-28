@@ -77,3 +77,17 @@ p {
 ul {
   padding: 0;
 }
+
+/* CONTAINER STYLES */
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+  clear: both;
+}
