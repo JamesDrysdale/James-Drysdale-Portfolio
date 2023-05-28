@@ -14,7 +14,7 @@ export default component$(() => {
     return(
         <header>
             <div class="headerbar">
-                <div class="container">
+                <div class="container animate__animated animate__fadeInDown">
                     <div class="headerbar-inner">
                         <div class="logo">
                             <a href="#">
