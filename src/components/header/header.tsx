@@ -11,7 +11,7 @@ export default component$(() => {
                     <div class="headerbar-inner">
                         <div class="logo">
                             <a href="#">
-                                <img src="images/logo.png" alt="James Drysdale Brand Logo" />
+                                <img src="images/logo.png" alt="James Drysdale Brand Logo" height={68} width={68}/>
                             </a>
                         </div>
                     </div>

@@ -37,10 +37,6 @@
   font-weight: 900;
 }
 
-body {
-  font-family: "Mulish", sans-serif;
-}
-
 /* COLOURS SETUP */
 
 :root {
@@ -48,6 +44,36 @@ body {
   --foreground-color: #BBBBBB;
   --light: #FFFFFF;
   --dark: #000000;
+}
 
+/* BASIC GLOBAL STYLES - 
+// to reset any defaults provided by specific browsers and create cross-platform consistency 
+*/
+
+body {
+  font-family: "Mulish", sans-serif;
   background-color: var(--dark);
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: poppins, sans-serif;
+  color: var(--light);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+
+}
+
+ul {
+  padding: 0;
 }
