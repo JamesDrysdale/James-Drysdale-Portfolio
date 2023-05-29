@@ -1,10 +1,21 @@
-import { component$, useStylesScoped$, useSignal, $ } from "@builder.io/qwik";
+import { component$, useStylesScoped$, useSignal, useOnDocument, $ } from "@builder.io/qwik";
 import { scrollToSection } from "~/utils/utils";
 import STYLE from './header.scss?inline';
 
 export default component$(() => {
     useStylesScoped$(STYLE);
     const activeNav = useSignal("home");
+    const scrollTop = useSignal(0);
+
+    useOnDocument("scroll", $(() => {
+        scrollTop.value = document.getElementsByTagName("html")[0]?.scrollTop || 0;
+
+        if(scrollTop.value > 835) {
+            activeNav.value = "about";
+        } else {
+            activeNav.value = "home";
+        }
+    }));
 
     const handleNavClick = $((elementId: string) => {
         scrollToSection(elementId);
