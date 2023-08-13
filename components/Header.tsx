@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import DarkLightTheme from './DarkLightTheme';
+
 const Header = () => {
   const pathname = usePathname();
 
@@ -43,7 +45,8 @@ const Header = () => {
             ))}
           </nav>
           <div className='mx-3.5 flex items-center justify-start'>
-            *{/* <DarkLightTheme /> */}
+            {/* * */}
+            <DarkLightTheme />
           </div>
         </section>
       </div>
