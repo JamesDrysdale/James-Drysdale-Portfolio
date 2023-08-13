@@ -1,41 +1,42 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+    const pathname = usePathname();
+
+    const routes = [
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About' },
+        { path: '/articles', label: 'Articles' },
+        { path: '/services', label: 'Services' },
+        { path: '/connect', label: 'Connect' },
+    ];
+    
     return (
         <header className="bg-slate-800 px-5 ">
-            <div className="flex prose prose-xl mx-auto justify-between">
-                        <div className="">
-                            <a href="#">
-                                <Image src="/images/logo.png" alt="James Drysdale Brand Logo" height={68} width={68}/>
-                            </a>
-                        </div>
-                        <nav className="">
-                            <ul className="flex list-none">
-                                <li>
-                                    <Link href='/'>Home</Link>
-                                </li>
-                                <li >
-                                    <Link href='/about'>About</Link>
-                                </li>
-                                <li >
-                                    <Link href='/articles'>Articles</Link>
-                                </li>
-                                <li >
-                                    <Link href='/services'>Services</Link>
-                                </li>
-                                <li >
-                                    <Link href='/projects'>Projects</Link>
-                                </li>
-                                <li >
-                                    <Link href='/connect'>Connect</Link>
-                                </li>
-                                <li>
-                                    *
-                                </li>
-                            </ul>
-                        </nav>
+            <div className="flex prose prose-xl mx-auto justify-between place-items-center">
+                <div className="">
+                    <a href="#">
+                        <Image src="/images/logo.png" alt="James Drysdale Brand Logo" height={68} width={68}/>
+                    </a>
+                </div>
+                <section className="flex">
+                    <nav className="flex">
+                        {routes.map((route) => (
+                            <Link href={route.path} key={route.label} className='h-full'>
+                                <p className={`mx-3.5 flex items-center font-medium text-natural6 ${pathname === route.path && 'border-b border-primary font-semibold text-primary'}`}>{route.label}</p>
+                            </Link>
+                        ))}
+                    </nav>
+                    <div className='mx-3.5 items-center flex justify-start'>
+                        *
+                        {/* <DarkLightTheme /> */}
                     </div>
+                </section>
+            </div>
         </header>
     )
 };
