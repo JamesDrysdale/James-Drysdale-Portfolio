@@ -27,7 +27,7 @@ const Header = () => {
                     <nav className="flex">
                         {routes.map((route) => (
                             <Link href={route.path} key={route.label} className='h-full'>
-                                <p className={`mx-3.5 flex items-center font-medium text-natural6 ${pathname === route.path && 'border-b border-primary font-semibold text-primary'}`}>{route.label}</p>
+                                <p className={`mx-2 text-lg flex items-center ${pathname === route.path && 'text-primary'}`}>{route.label}</p>
                             </Link>
                         ))}
                     </nav>
