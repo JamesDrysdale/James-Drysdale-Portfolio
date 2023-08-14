@@ -26,9 +26,7 @@ const Header = () => {
           <a href='#'>
             <Image
               src={`/images/${
-                theme === 'dark'
-                  ? '/svgs/logo-dark.svg'
-                  : '/svgs/logo-light.svg'
+                theme === 'dark' ? 'svgs/logo-dark.svg' : 'svgs/logo-light.svg'
               }`}
               alt='James Drysdale Brand Logo'
               height={68}
