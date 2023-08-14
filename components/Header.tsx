@@ -29,8 +29,8 @@ const Header = () => {
                 theme === 'dark' ? 'svgs/logo-dark.svg' : 'svgs/logo-light.svg'
               }`}
               alt='James Drysdale Brand Logo'
-              height={68}
-              width={68}
+              height={50}
+              width={50}
             />
           </a>
         </div>

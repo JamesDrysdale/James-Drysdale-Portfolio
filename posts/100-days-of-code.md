@@ -1,7 +1,6 @@
 ---
 title: 'Level up your coding with 100 days of code'
-subtitle: 'How to grow your skills fast with the 100 days of code challenge'
-date: 'Aug-13-2023'
+date: '2023-08-13'
 ---
 
 ## Introduction: Unleashing Your Potential with the 100 Days of Code Challenge

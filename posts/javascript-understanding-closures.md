@@ -1,7 +1,6 @@
 ---
-Title: "Understanding Closures in JavaScript: A Beginner's Guide"
-Subtitle: 'Mastering Closures in JavaScript: From Fast-Food Memory to Efficient Code'
-Date: 'Aug-14-2023'
+title: "Understanding Closures in JavaScript: A Beginner's Guide"
+date: '2023-08-14'
 ---
 
 Closures in JavaScript can seem like a complex topic at first, but with relatable examples and practical insights, you'll soon find yourself mastering this important concept. Closures are a powerful feature that can significantly enhance your code organization and efficiency. In this article, we'll break down closures using a simple and relatable example, and we'll explore some common use cases to showcase how they can be applied in real-world scenarios.
