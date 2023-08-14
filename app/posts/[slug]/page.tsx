@@ -15,7 +15,7 @@ const PostPage = (props: any) => {
   return (
     <article>
       <h1>Hello {slug}</h1>
-      <p>{content}</p>
+      {content}
     </article>
   );
 };
