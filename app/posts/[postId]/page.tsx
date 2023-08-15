@@ -1,8 +1,17 @@
+import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
 import { getSortedPosts, getPost } from '../../../lib/posts';
 import getFormattedDate from '../../../lib/getFormattedDate';
+
+export function generateStaticParams() {
+  const posts = getSortedPosts(); // deduped
+
+  return posts.map((post) => ({
+    postId: post.id,
+  }));
+}
 
 export function generateMetadata({ params }: { params: { postId: string } }) {
   const posts = getSortedPosts(); // deduped

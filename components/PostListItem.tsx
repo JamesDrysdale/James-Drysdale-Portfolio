@@ -3,6 +3,7 @@ import Link from 'next/link';
 import getFormattedDate from '../lib/getFormattedDate';
 
 type Props = {
+  // eslint-disable-next-line no-undef
   post: Post;
 };
 
