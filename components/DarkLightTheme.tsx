@@ -23,8 +23,8 @@ const DarkLightTheme = () => {
         alt={`Current theme: ${
           theme === 'dark' ? 'dark' : 'light'
         } mode. Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-        height={20}
-        width={20}
+        height={35}
+        width={35}
         onClick={toggleTheme}
       />
     </label>

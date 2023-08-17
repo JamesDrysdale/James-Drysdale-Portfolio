@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import getFormattedDate from '../lib/getFormattedDate';
+import { Post } from '@/types';
 
 type Props = {
-  // eslint-disable-next-line no-undef
   post: Post;
 };
 
