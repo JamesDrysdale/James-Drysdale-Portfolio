@@ -1,7 +1,12 @@
+import Jumbotron from '@/components/Jumbotron';
 import React from 'react';
 
 const Home = () => {
-  return <h1>Hello world! It&apos;s portfolio time</h1>;
+  return (
+    <div>
+      <Jumbotron />
+    </div>
+  );
 };
 
 export default Home;

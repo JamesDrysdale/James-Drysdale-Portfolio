@@ -16,6 +16,9 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      backgroundImage: {
+        avatar: "url('/images/jamesdrysdale.jpg')",
+      },
       colors: {
         black: '#000000',
         black1: '#171725',
