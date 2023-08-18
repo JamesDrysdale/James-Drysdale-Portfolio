@@ -18,7 +18,7 @@ export default function Jumbotron() {
           <div className='absolute inset-0 rounded-full bg-avatar bg-cover bg-center bg-no-repeat'></div>
           <div className='absolute inset-[-10px] z-[-1] rounded-full bg-natural opacity-10'></div>
         </div>
-        <h3 className=''>
+        <h3 className={`mb-4 text-5xl font-bold uppercase text-white`}>
           James <span>Drysdale</span>
         </h3>
         <p className=''>
