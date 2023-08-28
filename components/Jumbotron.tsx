@@ -20,11 +20,11 @@ export default function Jumbotron() {
             </h3>
             <button
               type='button'
-              className='rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100/10 hover:bg-neutral-500 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100/10'
+              className='rounded border-2 border-white2 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-white2 transition duration-150 ease-in-out hover:border-primary hover:bg-black3/50 hover:text-primary focus:border-white2 focus:text-primary focus:outline-none focus:ring-0 active:border-white2 active:text-primary dark:hover:bg-black3/50'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
-              Call to action
+              <a href='#about'>Get to know me</a>
             </button>
           </div>
         </div>
