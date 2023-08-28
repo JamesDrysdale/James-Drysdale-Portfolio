@@ -20,7 +20,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='fixed inset-x-0 top-0 z-40 py-5 transition duration-300 ease-in motion-reduce:transition-none '>
+    <header className='fixed inset-x-0 top-0 z-40 bg-white2 py-2 transition duration-300 ease-in motion-reduce:transition-none dark:bg-black3'>
       <div className='relative  mx-auto box-border flex h-auto w-full max-w-6xl items-center px-10'>
         {/* Website Logo */}
         <div className=' h-auto'>
