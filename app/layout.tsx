@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${poppins.className} dark:bg-slate-800`}>
+      <body className={`${poppins.className} dark:bg-black3`}>
         <Provider>
           <Header />
           {children}

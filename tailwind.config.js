@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         avatar: "url('/images/jamesdrysdale.jpg')",
+        jumbobg: "url('/images/banner.jpg')",
       },
       colors: {
         black: '#000000',
