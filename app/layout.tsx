@@ -1,12 +1,20 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins, Montserrat } from 'next/font/google';
 
 import Header from '../components/Header';
 import './globals.css';
 import Provider from './providers/Provider';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  weight: ['400', '500', '700', '800'],
+  subsets: ['latin'],
+});
+
+const montserrat = Montserrat({
+  weight: ['800'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'James Drysdale - Software Developer',
@@ -21,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} dark:bg-slate-800`}>
+      <body className={`${poppins.className} dark:bg-black3`}>
         <Provider>
           <Header />
           {children}

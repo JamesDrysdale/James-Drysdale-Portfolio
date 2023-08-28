@@ -5,6 +5,15 @@ const Home = () => {
   return (
     <div>
       <Jumbotron />
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
+      <p>SCROLL</p>
     </div>
   );
 };
